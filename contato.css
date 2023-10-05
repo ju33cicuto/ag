@@ -1,0 +1,160 @@
+body {
+    background-color: #3498db;
+    font-family: 'Inter', sans-serif;
+}
+.header__container {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+}
+.header__title {
+    font-size: 2.25rem;
+    margin: 0;
+    font-weight: 600;
+}
+.section__subtitle {
+    font-size: 2rem;
+    margin-top: 1.25rem;
+    font-weight: 600;
+}
+.create__form,
+.search__form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+.create__input,
+.search__input,
+#select-type {
+    width: 50%;
+    padding: 10px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.search__button{
+    width: 6rem;
+    padding: 1rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 5px 5px 10px black;
+    font-size: 0.850rem;
+    font-weight: 600;
+}
+#create__button{
+    padding: 1rem;
+    margin-top: 1rem;
+    border-radius: 8px;
+    width: 8rem;
+    border: none;
+    box-shadow: 5px 5px 10px black;
+    }
+#select-type {
+    font-size: 16px;
+}
+main {
+    background-color:#3498db;
+}
+.card__container{
+    display: flex;
+    align-items: center;
+    margin: 15px;
+    padding: 10px;
+    justify-content: space-between;
+}
+.card {
+    background-color: aliceblue;
+    display: flex;
+    padding: 2rem;
+    margin: 1rem;
+    border-radius: 2rem;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.contacts__title{
+    font-size: 2rem;
+    color: aliceblue;
+    font-weight: 600;
+    text-align: center;
+}
+
+.email {
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 10px;
+    padding: 6px;
+}
+
+.pName{
+    margin: 10px;
+    display: flex;
+    font-size: 1rem;
+    width: 1rem;
+    gap: 1rem;
+    
+}
+
+.phone {
+    width: 10px;
+    height: 10px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    padding: 6px;
+}
+.card__remove-button{
+    border: none;
+    background-color: aliceblue;
+    width: 2rem;
+    height: 2rem;
+}
+@media (max-width: 768px) {
+    .header__title {
+        font-size: 28px;
+    }
+    .card__container p {
+        font-size: 14px;
+    }
+    .section__subtitle {
+        font-size: 20px;
+    }
+    .email, .phone {
+        width: 8px;
+        height: 8px;
+    }
+    .card__container {
+        padding: 10px;
+        font-size: 1rem;
+        font-weight: 400;
+    }
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .create__input,
+    .search__input,
+    #select-type,
+    .create__button,
+    .search__button {
+        padding: 8px;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .card__remove-button {
+        cursor: pointer;
+        font-size: 14px;
+        width: 30%;
+        margin-left: 5rem;
+        transition: transform 0.3s ease
+    }
+    .card__remove-button:hover .icon{
+       transform: scale(1.2); 
+    }
+}
